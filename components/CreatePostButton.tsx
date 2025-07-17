@@ -14,10 +14,16 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     alignItems: 'center',
     marginVertical: 16,
+    shadowColor: '#007AFF',
+    shadowOpacity: 0.15,
+    shadowRadius: 6,
+    elevation: 3,
   },
   text: {
     color: '#fff',
     fontWeight: 'bold',
+    fontSize: 16,
+    letterSpacing: 1,
   },
 });
 

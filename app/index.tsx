@@ -34,7 +34,7 @@ const Home = () => {
       <Header title="Home Page" />
       <PostList />
       <CreatePostButton onPress={handleCreatePost} />
-      <BottomNav onTabPress={handleTabPress} />
+      <BottomNav activeTab="Home" onTabPress={handleTabPress} />
     </View>
   );
 };
@@ -42,8 +42,11 @@ const Home = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#111',
+    backgroundColor: '#f5f5f5', // lighter background for contrast
     justifyContent: 'flex-start',
+    paddingHorizontal: 12,
+    paddingTop: 0,
+    paddingBottom: 70, // space for bottom nav
   },
 });
 
